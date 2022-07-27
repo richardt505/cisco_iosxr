@@ -1,0 +1,12 @@
+---
+- hosts: asr9k
+  gather_facts: True
+
+  tasks:
+  - name: Ping Test
+    ping:
+    register: output
+
+  - name: Show Output
+    debug:
+      var: output
