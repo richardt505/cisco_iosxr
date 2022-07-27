@@ -1,5 +1,5 @@
 ---
-- hosts: asr9k
+- hosts: all
   gather_facts: True
 
   tasks:
